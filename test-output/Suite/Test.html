@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 13 21:19:45 IST 2025</td>
+<td>Started on:</td><td>Tue Jan 14 06:25:18 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>541 seconds (541277 ms)</td>
+<tr><td>Total time:</td><td>42 seconds (42439 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,95 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='test.TC_006_DeleteFromCartTest.DeleteFromCartTest()'><b>DeleteFromCartTest</b><br>Test class: test.TC_006_DeleteFromCartTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [69bf32ecf540ab5a32e53904311992f8, findChildElement {id=f.E2D0D8275CD038322FB4176967B685E7.d.7E7E48EB5FF1360940BB64CA5BB0B485.e.194, value=//tr[2]//td[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ezhil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57877}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57877/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 69bf32ecf540ab5a32e53904311992f8
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
-	at pages.CartPage.deleteProduct(CartPage.java:57)
-	at test.TC_006_DeleteFromCartTest.DeleteFromCartTest(TC_006_DeleteFromCartTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace657046385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace657046385'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [69bf32ecf540ab5a32e53904311992f8, findChildElement {id=f.E2D0D8275CD038322FB4176967B685E7.d.7E7E48EB5FF1360940BB64CA5BB0B485.e.194, value=//tr[2]//td[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ezhil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57877}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57877/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 69bf32ecf540ab5a32e53904311992f8
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
-	at pages.CartPage.deleteProduct(CartPage.java:57)
-	at test.TC_006_DeleteFromCartTest.DeleteFromCartTest(TC_006_DeleteFromCartTest.java:33)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>16</td>
-<td>test.TC_006_DeleteFromCartTest@20b2475a</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -165,105 +76,10 @@ Session ID: 69bf32ecf540ab5a32e53904311992f8
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TC_007_PurchaseTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_007_PurchaseTest<br>Parameters: Manikandan,  , Chennai, 9234567896123456, 11, 2026, positive,  </td>
+<td title='test.TC_006_DeleteFromCartTest.DeleteFromCartTest()'><b>DeleteFromCartTest</b><br>Test class: test.TC_006_DeleteFromCartTest</td>
 <td></td>
-<td>29</td>
-<td>test.TC_007_PurchaseTest@7857fe2</td></tr>
-<tr>
-<td title='test.TC_007_PurchaseTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_007_PurchaseTest<br>Parameters: Manikandan, India, Chennai,  , 11, 2026, negative, Please fill out Name and Creditcard.</td>
-<td></td>
-<td>29</td>
-<td>test.TC_007_PurchaseTest@7857fe2</td></tr>
-<tr>
-<td title='test.TC_001_SignUpTest.SignUpTest()'><b>SignUpTest</b><br>Test class: test.TC_001_SignUpTest<br>Parameters: Mitra17, Eli@1793, negative, This user already exist.</td>
-<td></td>
-<td>2</td>
-<td>test.TC_001_SignUpTest@624ea235</td></tr>
-<tr>
-<td title='test.TC_001_SignUpTest.SignUpTest()'><b>SignUpTest</b><br>Test class: test.TC_001_SignUpTest<br>Parameters: Mitra17,  , negative, Please fill out Username and Password.</td>
-<td></td>
-<td>2</td>
-<td>test.TC_001_SignUpTest@624ea235</td></tr>
-<tr>
-<td title='test.TC_007_PurchaseTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_007_PurchaseTest<br>Parameters: Manikandan, India, Chennai, 9234567896123456,  , 2026, positive,  </td>
-<td></td>
-<td>30</td>
-<td>test.TC_007_PurchaseTest@7857fe2</td></tr>
-<tr>
-<td title='test.TC_002_LogInTest.LogInTest()'><b>LogInTest</b><br>Test class: test.TC_002_LogInTest<br>Parameters: Mitra, Eli@1793, positive, </td>
-<td></td>
-<td>9</td>
-<td>test.TC_002_LogInTest@821330f</td></tr>
-<tr>
-<td title='test.TC_002_LogInTest.LogInTest()'><b>LogInTest</b><br>Test class: test.TC_002_LogInTest<br>Parameters: Mitra,  , negative_login, Please fill out Username and Password.</td>
-<td></td>
-<td>5</td>
-<td>test.TC_002_LogInTest@821330f</td></tr>
-<tr>
-<td title='test.TC_005_AddToCartTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_005_AddToCartTest<br>Parameters: Samsung galaxy s6, Phones, positive, Product added.</td>
-<td></td>
-<td>32</td>
-<td>test.TC_005_AddToCartTest@210ab13f</td></tr>
-<tr>
-<td title='test.TC_005_AddToCartTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_005_AddToCartTest<br>Parameters: ASUS Full HD, Monitors, positive, Product added.</td>
-<td></td>
-<td>57</td>
-<td>test.TC_005_AddToCartTest@210ab13f</td></tr>
-<tr>
-<td title='test.TC_007_PurchaseTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_007_PurchaseTest<br>Parameters:  , India, Chennai, 9234567896123456, 11, 2026, negative, Please fill out Name and Creditcard.</td>
-<td></td>
-<td>29</td>
-<td>test.TC_007_PurchaseTest@7857fe2</td></tr>
-<tr>
-<td title='test.TC_007_PurchaseTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_007_PurchaseTest<br>Parameters: Manikandan, India,  , 9234567896123456, 11, 2026, positive,  </td>
-<td></td>
-<td>29</td>
-<td>test.TC_007_PurchaseTest@7857fe2</td></tr>
-<tr>
-<td title='test.TC_007_PurchaseTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_007_PurchaseTest<br>Parameters: Manikandan, India, Chennai, 9234567896123456, 11,  , positive,  </td>
-<td></td>
-<td>32</td>
-<td>test.TC_007_PurchaseTest@7857fe2</td></tr>
-<tr>
-<td title='test.TC_003_LogOutTest.LogOutTest()'><b>LogOutTest</b><br>Test class: test.TC_003_LogOutTest</td>
-<td></td>
-<td>9</td>
-<td>test.TC_003_LogOutTest@6f43c82</td></tr>
-<tr>
-<td title='test.TC_007_PurchaseTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_007_PurchaseTest<br>Parameters: Manikandan, India, Chennai, 9234567896123456, 11, 2026, positive,  </td>
-<td></td>
-<td>31</td>
-<td>test.TC_007_PurchaseTest@7857fe2</td></tr>
-<tr>
-<td title='test.TC_005_AddToCartTest.AddToCartTest()'><b>AddToCartTest</b><br>Test class: test.TC_005_AddToCartTest<br>Parameters: Sony vaio i7, Laptops, positive, Product added.</td>
-<td></td>
-<td>66</td>
-<td>test.TC_005_AddToCartTest@210ab13f</td></tr>
-<tr>
-<td title='test.TC_002_LogInTest.LogInTest()'><b>LogInTest</b><br>Test class: test.TC_002_LogInTest<br>Parameters:  , Eli@1793, negative_login, Please fill out Username and Password.</td>
-<td></td>
-<td>5</td>
-<td>test.TC_002_LogInTest@821330f</td></tr>
-<tr>
-<td title='test.TC_001_SignUpTest.SignUpTest()'><b>SignUpTest</b><br>Test class: test.TC_001_SignUpTest<br>Parameters:  , Eli@1793, negative, Please fill out Username and Password.</td>
-<td></td>
-<td>2</td>
-<td>test.TC_001_SignUpTest@624ea235</td></tr>
-<tr>
-<td title='test.TC_002_LogInTest.LogInTest()'><b>LogInTest</b><br>Test class: test.TC_002_LogInTest<br>Parameters: Mitra1793, Eli@1793, negative_login, User does not exist.</td>
-<td></td>
-<td>5</td>
-<td>test.TC_002_LogInTest@821330f</td></tr>
-<tr>
-<td title='test.TC_004_UserHomePageDisplayTest.UserHomePageDisplayTest()'><b>UserHomePageDisplayTest</b><br>Test class: test.TC_004_UserHomePageDisplayTest</td>
-<td></td>
-<td>7</td>
-<td>test.TC_004_UserHomePageDisplayTest@5db6b9cd</td></tr>
-<tr>
-<td title='test.TC_001_SignUpTest.SignUpTest()'><b>SignUpTest</b><br>Test class: test.TC_001_SignUpTest<br>Parameters: Mitra17, Eli@1793, positive, Sign up successful.</td>
-<td></td>
-<td>2</td>
-<td>test.TC_001_SignUpTest@624ea235</td></tr>
+<td>17</td>
+<td>test.TC_006_DeleteFromCartTest@60f00693</td></tr>
 </table><p>
 </body>
 </html>
