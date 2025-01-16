@@ -61,10 +61,10 @@ public class CartPage extends ProjectSpecificationMethods{
 		expCartValue=CartValue;}
 		rows= table.findElements(By.xpath("//tr"));
 		row_size= rows.size();
-			
+			System.out.println(row_size);
 			for(int i=1;i<row_size;i++) {
-				Thread.sleep(5000);
-				if(table.findElement(By.xpath("//tr["+i+"]//td[2]")).isDisplayed()) {
+				Thread.sleep(3000);
+				System.out.println(row_size);
 			cell = table.findElement(By.xpath("//tr["+i+"]//td[2]"));
 			String cell_val = cell.getText();
 			if(cell_val.equals(ProductNm)) {
@@ -72,16 +72,19 @@ public class CartPage extends ProjectSpecificationMethods{
 				Product=cell_val;
 				ProductPrice=table.findElement(By.xpath("//tr["+i+"]//td[3]")).getText();
 				table.findElement(By.xpath("//tr["+i+"]//td[4]//a[text()='Delete']")).click();
-				Thread.sleep(5000);
+				Thread.sleep(3000);
+				driver.navigate().refresh();
+				Thread.sleep(3000);
+				table = driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-striped']"));
 				rows= table.findElements(By.xpath("//tr"));
 				row_size= rows.size();
+				i=1;
 				expCartValue=expCartValue-Integer.parseInt(ProductPrice);
-				}
-			if(row_size<2) {
-				break;
-			}
+				
 				}
 			}
+			Thread.sleep(3000);
+			CartVal=driver.findElement(By.xpath("//h3[@id='totalp']"));
 			if(CartVal.isDisplayed()) {
 		      CartTotalFinal=CartVal.getText();
 			}
